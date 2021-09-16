@@ -1,2 +1,2 @@
-# pug-sass-example
+# pug-scss-example
 Html Css Example Work
