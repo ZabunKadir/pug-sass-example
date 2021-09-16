@@ -948,14 +948,50 @@ https://flickity.metafizzy.co
 }
 
 .Highlights {
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   margin-top: -100px;
 }
 .Highlights-slider .flickity-viewport {
   overflow: visible;
 }
 .Highlights-slider .is-expanded {
-  width: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.Highlights-slider .is-expanded .show {
+  display: flex;
+  width: 40%;
+}
+.Highlights-slider .is-expanded .extra {
+  width: 60%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Highlights-slider .is-expanded .extra-items {
+  margin-left: 30px;
+}
+.Highlights-slider .is-expanded .extra-items-title {
+  margin-bottom: 10px;
+  color: #083887;
+  font-weight: bold;
+}
+.Highlights-slider .is-expanded .extra-items-properties {
+  color: gray;
+  margin-top: 10px;
+}
+.Highlights-slider .is-expanded .extra-items-properties label {
+  font-size: 12px;
+}
+.Highlights-slider .is-expanded .extra-items-properties label strong {
+  color: #585858;
+}
+.Highlights-slider .is-expanded .extra-items-button {
+  width: 180px;
+  margin-top: 20px;
 }
 @media (min-width: 768px) {
   .Highlights-slider .is-expanded {
@@ -993,20 +1029,204 @@ https://flickity.metafizzy.co
   top: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
 }
 .Highlights-slider-item .show .content {
   position: relative;
+  overflow: hidden;
   z-index: 1;
 }
+.Highlights-slider-item .show .tag-title {
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.7);
+}
 .Highlights-slider-item .show .tag-item {
-  color: inherit;
-  display: flex;
+  color: white;
+  display: inline-flex;
   margin-left: 5px;
   margin-right: 5px;
 }
 .Highlights-slider .extra {
   display: none;
+}
+
+.Features-items {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+@media (min-width: 768px) {
+  .Features-items {
+    flex-direction: row;
+  }
+  .Features-items .Features-item {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: auto;
+    padding: 40px;
+  }
+}
+.Features-items .Features-item {
+  width: 90%;
+  margin: 5px auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px;
+}
+.Features-items .Features-item-title {
+  color: #083887;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.Features-items .Features-item-title label {
+  color: #01acee;
+}
+.Features-items .Features-item-explanation a {
+  color: #01acee;
+  text-decoration: underline;
+  font-weight: 400;
+}
+.Features-items .Features-item:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.Destination {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+}
+@media (min-width: 768px) {
+  .Destination-items {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.Destination-title {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  color: #083887;
+  font-size: 34px;
+  margin-bottom: 50px;
+}
+.Destination-items {
+  display: flex;
+  flex-direction: column;
+}
+.Destination-item {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.Destination-item-image {
+  width: 40%;
+}
+.Destination-item-image img {
+  width: 180px;
+  height: 100%;
+}
+.Destination-item-content {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  color: #acacac;
+  border-bottom: 1px solid silver;
+  margin-left: 20px;
+  font-size: 0.86em;
+}
+.Destination-item-info {
+  width: 90%;
+}
+.Destination-item-info-title {
+  color: #083887;
+  font-weight: bold;
+}
+.Destination-item-info-location {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  margin-right: 5px;
+  align-items: center;
+}
+.Destination-item-info-location label {
+  margin-left: 5px;
+}
+.Destination-item-info-features {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: flex-start;
+  text-decoration: underline;
+}
+.Destination-item-info .location-features {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.Destination-item-info .location-features .location-top {
+  display: flex;
+  background-color: #fbbe00;
+  width: 48px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 5px;
+}
+.Destination-item-info .location-features .location-flight {
+  display: flex;
+  background-color: #01acee;
+  width: 24px;
+  height: 24px;
+  font-size: 14px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+.Destination-item-button {
+  width: 10%;
+}
+.Destination-item-button button {
+  width: 100%;
+  background: none;
+  margin-top: 10px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.Destination-item-button button:hover i {
+  color: #01acee;
+}
+.Destination-item-button button i {
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  color: #989898;
+}
+.Destination-all-button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.Destination-all-button button {
+  width: 80%;
+  height: 88px;
+  cursor: pointer;
+  font-weight: 300;
+}
+.Destination-all-button button:hover {
+  background-color: #083887;
+}
+.Destination-all-button button i {
+  margin-left: 30px;
+  font-size: 12px;
 }
 
 /*# sourceMappingURL=main.css.map */

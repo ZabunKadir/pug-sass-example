@@ -1,2 +1,2 @@
 # pug-scss-example
-Html Css Example Work
+Pug and scss(sass) Example Work
