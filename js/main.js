@@ -6,10 +6,21 @@ $(".Header-switch").on("click", function () {
   }
 });
 
-$(".Highlights-slider").flickity({
+var $carousel = $(".Highlights-slider").flickity({
   // options
   cellAlign: "left",
   contain: true,
   prevNextButtons: false,
   pageDots: false,
+});
+$(".Highligts-slider-item:eq(0)").addClass("is-expanded");
+$carousel.flickity('reposition')
+$carousel.on( 'staticClick.flickity', function( event, pointer, cellElement, cellIndex ) {
+  if ( !cellElement ) {
+    return;
+  }
+  $carousel.find('.is-expanded').removeClass('is-expanded');
+  $( cellElement ).addClass('is-expanded');
+  $carousel.flickity('reposition')
+  $carousel.flickity('select', cellIndex)
 });
