@@ -999,7 +999,7 @@ https://flickity.metafizzy.co
   }
 }
 .Highlights-slider-item {
-  width: 40%;
+  width: 60%;
   height: 200px;
   margin-left: 30px;
   margin-right: 30px;
@@ -1074,6 +1074,7 @@ https://flickity.metafizzy.co
   flex-direction: column;
   align-items: flex-start;
   padding: 30px;
+  transition: 0.2s all;
 }
 .Features-items .Features-item-title {
   color: #083887;
@@ -1093,15 +1094,8 @@ https://flickity.metafizzy.co
 }
 
 .Destination {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  display: flex;
-}
-@media (min-width: 768px) {
-  .Destination-items {
-    display: flex;
-    flex-direction: row;
-  }
+  width: 100%;
+  margin: 50px auto;
 }
 .Destination-title {
   display: flex;
@@ -1112,29 +1106,42 @@ https://flickity.metafizzy.co
   margin-bottom: 50px;
 }
 .Destination-items {
+  width: 100%;
   display: flex;
   flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
 }
 .Destination-item {
   margin-top: 10px;
   margin-bottom: 10px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
 }
 .Destination-item-image {
-  width: 40%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
 }
 .Destination-item-image img {
-  width: 180px;
-  height: 100%;
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  height: 200px;
 }
 .Destination-item-content {
-  width: 60%;
+  width: 100%;
+  margin-top: 10px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: row;
   color: #acacac;
   border-bottom: 1px solid silver;
-  margin-left: 20px;
   font-size: 0.86em;
 }
 .Destination-item-info {
@@ -1157,6 +1164,7 @@ https://flickity.metafizzy.co
 .Destination-item-info-features {
   display: flex;
   align-items: center;
+  word-wrap: break-word;
   margin-top: 20px;
   margin-bottom: 20px;
   justify-content: flex-start;
@@ -1220,6 +1228,7 @@ https://flickity.metafizzy.co
   height: 88px;
   cursor: pointer;
   font-weight: 300;
+  transition: 0.2s all;
 }
 .Destination-all-button button:hover {
   background-color: #083887;
@@ -1227,6 +1236,164 @@ https://flickity.metafizzy.co
 .Destination-all-button button i {
   margin-left: 30px;
   font-size: 12px;
+}
+@media (min-width: 768px) {
+  .Destination-items {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    flex-wrap: wrap;
+  }
+  .Destination-item {
+    width: 40%;
+    flex-direction: row;
+  }
+  .Destination-item-image {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 40%;
+  }
+  .Destination-item-image img {
+    width: 100%;
+    height: 150px;
+  }
+  .Destination-item-content {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    color: #acacac;
+    border-bottom: 1px solid silver;
+    margin-left: 20px;
+    font-size: 0.86em;
+  }
+  .Destination-all-button button {
+    width: 50%;
+    height: 66px;
+    cursor: pointer;
+    font-weight: 300;
+    transition: 0.2s all;
+  }
+  .Destination-all-button button:hover {
+    background-color: #083887;
+  }
+  .Destination-all-button button i {
+    margin-left: 30px;
+    font-size: 12px;
+  }
+}
+
+.Services {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  display: flex;
+  width: 100%;
+}
+.Services-review {
+  display: flex;
+  width: 400px;
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.Services-review-icon {
+  color: #083887;
+  width: 50px;
+  font-size: 44px;
+  margin-right: 30px;
+}
+.Services-review-content {
+  width: 350px;
+}
+.Services-review-content-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #083887;
+}
+.Services-review-content-title label {
+  color: #01acee;
+}
+.Services-review-content-info {
+  margin-top: 20px;
+  font-size: 0.86em;
+  color: #585858;
+  font-weight: 500;
+}
+.Services-review-content-info label {
+  color: #01acee;
+  text-decoration: underline;
+}
+@media (min-width: 768px) {
+  .Services .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .Services-review {
+    width: 40%;
+  }
+}
+
+.Discover {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.Discover-title {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  color: #083887;
+  font-size: 34px;
+  margin-bottom: 50px;
+}
+.Discover-content-items {
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+}
+.Discover-content-item {
+  margin: 10px auto;
+  width: 80%;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+}
+.Discover-content-title {
+  width: 80%;
+  margin-top: 60px;
+  color: white;
+  font-weight: bold;
+  font-size: 26px;
+}
+.Discover-content-info {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  text-align: start;
+  color: white;
+  font-size: 16px;
+}
+.Discover-content-more {
+  background-color: #01acee;
+  margin: 10px auto;
+  width: 80%;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+}
+.Discover-content-more i {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
 }
 
 /*# sourceMappingURL=main.css.map */

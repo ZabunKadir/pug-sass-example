@@ -94,14 +94,13 @@ h3 {
 }
 .form-description {
   margin-top: 8px;
-  @include mq("tablet"){
+  @include mq("tablet") {
     font-size: $font-size;
   }
 }
 .form-checkbox {
   display: flex;
   align-items: center;
-
 }
 .checkbox {
   position: relative;
