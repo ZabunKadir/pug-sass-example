@@ -1,2 +1,4 @@
 # pug-scss-example
-Pug and scss(sass) Example Work
+This project is an example hotel site
+##Used technologies
+Html,css,JavaScript,Pug,scss(sass)
