@@ -1,4 +1,4 @@
-# pug-scss-example
+# Pug-Scss-Example
 This project is an example hotel site
 
 # Used technologies
